@@ -266,6 +266,16 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
   }
+  .hero-cta{
+    align-items : center;
+  }
+  .page {
+    background-position: top center;
+  }
+
+  .hero {
+    background-position: center top;
+  }
 }
 /* FORCE CONTACT CONTENT TO FULL OPACITY */
 .block h2,
