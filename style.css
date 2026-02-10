@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #111;
+  color: #fff;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  color: #f5b300;
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 700;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #f5b300;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 100vh;
+  background: url("Assets/bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 0;
+
+}
+.overlay {
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: clamp(30px, 6vw, 64px);
+  font-weight: 800;
+  line-height: 1.15;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.title span {
+  color: #f5b300;
+}
+
+.subtitle {
+  margin-top: 14px;
+  font-size: clamp(14px, 2.5vw, 20px);
+  color: #ccc;
+}
+
+/* ================= BUTTONS ================= */
+.hero-cta {
+  margin-top: 32px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.primary {
+  background: #f5b300;
+  color: #000;
+}
+
+.secondary {
+  border: 2px solid #f5b300;
+  color: #f5b300;
+  background: transparent;
+}
+
+/* ================= INFO PAGE ================= */
+.page {
+  min-height: 100vh;
+  background: url("Assets/bg2.jpg") center/cover no-repeat;
+  position: relative;
+  padding-top: 120px;
+}
+
+.page .overlay {
+  background: rgba(0,0,0,0.45);   /* lighter overlay for info page */
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 20px 80px;
+}
+
+/* ================= CONTENT BLOCKS ================= */
+.block {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.block h2 {
+  font-size: clamp(24px, 4vw, 36px);
+  color: #f5b300;
+  margin-bottom: 16px;
+}
+
+.block p {
+  max-width: 800px;
+  margin: 0 auto 16px;
+  font-size: clamp(14px, 2vw, 16px);
+  color: #ddd;
+}
+
+/* ================= SERVICES ================= */
+.cards {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(0,0,0,0.7);
+  border: 2px solid #333;
+  padding: 26px;
+  border-radius: 14px;
+  width: min(260px, 100%);
+}
+
+/* ================= PROJECTS ================= */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: rgba(0,0,0,0.7);
+  border: 1px solid #333;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-info {
+  padding: 16px;
+}
+
+.project-info h3 {
+  color: #f5b300;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.project-info p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  position: relative;
+  z-index: 1;
+  background: rgba(0,0,0,0.85);
+  text-align: center;
+  padding: 16px 20px;
+}
+
+.footer p {
+  color: #aaa;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #f5b300;
+  text-decoration: none;
+}
+
+/* ================= BACK BUTTON ================= */
+.back {
+  display: block;
+  margin: 0 auto 40px;
+}
+
+/* ================= UTIL ================= */
+.hidden {
+  display: none;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 20px;
+  }
+
+  nav a {
+    margin-left: 16px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  } 
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* FORCE CONTACT CONTENT TO FULL OPACITY */
+.block h2,
+.block p,
+.block .btn {
+  opacity: 1 !important;
+}
