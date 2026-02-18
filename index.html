@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MMK Constructions</title>
@@ -13,33 +14,44 @@
   <nav>
     <a href="#" id="navHome">Home</a>
     <a href="#" id="navAbout">About</a>
-    <a href="https://wa.me/916300085728" target="_blank">WhatsApp</a>
   </nav>
 </header>
 
 <!-- HOME -->
 <section id="homePage" class="hero">
+
+  <!-- Background Video -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="Assets/bg11.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Overlay -->
   <div class="overlay"></div>
+
+  <!-- Content -->
   <div class="hero-content">
-    <h1 class="title">
-      Welcome to <span>MMK Constructions</span>
-    </h1>
+<h1 class="title">
+  Welcome to<br>
+  <span>MMK Constructions</span>
+</h1>
+
     <p class="subtitle">
       Professional Construction Solutions Built on Trust
     </p>
 
     <div class="hero-cta">
       <button id="exploreBtn" class="btn primary">Explore About Us</button>
-      <a href="https://wa.me/916300085728" target="_blank" class="btn secondary">
-        WhatsApp Us
-      </a>
+      <button class="btn secondary" id="contactBtn">Contact Us</button>
     </div>
   </div>
+
 </section>
+
 
 <!-- INFO PAGE -->
 <section id="infoPage" class="page hidden">
-  <div class="overlay"></div>
+
 
   <div class="page-content">
 
@@ -122,9 +134,39 @@
     <div class="block">
       <h2>Contact</h2>
       <p>Reach us instantly via WhatsApp for project discussions.</p>
-      <a href="https://wa.me/916300085728" target="_blank" class="btn primary">
-        Message on WhatsApp
+      <button class="btn secondary" id="contactBtn">Contact Us</button>
       </a>
+      <div class="contact-details">
+
+  <p class="contact-item">
+    📧 <strong>Email:</strong>
+    <a href="mailto:mantrimallesh99@gmail.com">
+      mantrimallesh99@gmail.com
+    </a>
+  </p>
+
+  <p class="contact-item">
+    📞 <strong>Phone:</strong>
+    <a href="tel:+919490539941">
+      +91 94905 39941
+    </a>
+  </p>
+
+  <p class="contact-item">
+    📍 <strong>Office Address:</strong><br>
+    Near Swarnagiri Temple, Hyderabad, Telangana, India
+  </p>
+
+</div>
+
+<!-- MAP -->
+<div class="map-container">
+  <iframe
+    src="https://www.google.com/maps?q=Hyderabad%20Telangana%20India&output=embed"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
     </div>
 
     <button id="backBtn" class="btn secondary back">
@@ -134,15 +176,30 @@
   </div>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2026 MMK Constructions. All rights reserved.</p>
-    <p>Email: <a href="mailto:mmkconstructions@gmail.com">mmkconstructions@gmail.com</a></p>
-    <p>Phone: +91 63000 85728</p>
-    <p>Address: Hyderabad, Telangana, India</p>
-    <p>Owners: MMK Group</p>
-  </footer>
-
+<footer class="footer">
+  © 2026 All Rights Reserved - MMK Constructions · Hyderabad ·
+  <a href="mailto:mantrimallesh99@gmail.com">mantrimallesh99@gmail.com</a> ·
+  +91 94905 39941
+</footer>
 </section>
+
+<!-- CONTACT POPUP -->
+<div class="contact-modal hidden" id="contactModal">
+  <div class="contact-box">
+    <button class="close-btn" id="closeModal">&times;</button>
+
+    <h2>Contact Us</h2>
+
+    <input type="text" id="userName" placeholder="Your Name">
+    <input type="tel" id="userPhone" placeholder="Phone Number">
+    <input type="tel" id="userArea" placeholder="Your Area/City">
+    <textarea id="userMsg" placeholder="How can we help you?"></textarea>
+
+    <button class="btn primary" id="sendWhatsApp">
+      Send via WhatsApp
+    </button>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
