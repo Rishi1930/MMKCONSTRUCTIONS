@@ -61,3 +61,9 @@ sendWhatsApp.onclick = () => {
 
   window.open(url, "_blank");
 };
+
+const video = document.querySelector(".bg-video");
+
+video.addEventListener("loadeddata", () => {
+  video.play();
+});
