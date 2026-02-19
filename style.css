@@ -476,6 +476,7 @@ nav a:hover {
   align-items: center;
 }
 
+
 .project-text,
 .project-image {
   flex: 1;
@@ -512,17 +513,22 @@ nav a:hover {
 
 .project-image img {
   width: 100%;
-  border-radius: 20px;
+  height: 320px;
   object-fit: cover;
+  border-radius: 20px;
 }
+
 
 .projects-cta {
   margin-top: 30px;
   text-align: center;
 }
+
 .projects-page {
-  padding-top: 140px; /* prevents navbar overlap */
+  background: #000;
+  padding: 140px 20px 60px;
 }
+
 
 .projects-header {
   max-width: 1200px;
@@ -540,15 +546,10 @@ nav a:hover {
   color: #fff;
 }
 
-.project-image img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-}
-
 .back-btn {
-  display: block;
-  margin: 0 auto 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 
@@ -604,7 +605,7 @@ nav a:hover {
     flex-direction: column;
   }
 
-  .project-row.reverse {
+  .project-row.reverse {  
     flex-direction: column;
   }
 }
