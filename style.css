@@ -600,13 +600,3 @@ nav a:hover {
   border-color: #d4af37;
 }
 
-@media (max-width: 768px) {
-  .project-row {
-    flex-direction: column;
-  }
-
-  .project-row.reverse {  
-    flex-direction: column;
-  }
-}
-
