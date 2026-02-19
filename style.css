@@ -321,6 +321,42 @@ nav a:hover {
   .hero {
     background-position: center top;
   }
+  /* ===== PROJECTS MOBILE FIX ===== */
+
+.projects-page .project-row {
+  flex-direction: column !important;
+  text-align: center;
+  gap: 20px;
+}
+
+.projects-page .project-row.reverse {
+  flex-direction: column !important;
+}
+
+.projects-page .project-image {
+  width: 100%;
+}
+
+.projects-page .project-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.projects-page .project-text {
+  width: 100%;
+  padding: 20px;
+}
+
+.projects-page .project-text h2 {
+  font-size: 22px;
+}
+
+.projects-page .project-text p {
+  font-size: 14px;
+}
+
 }
 /* FORCE CONTACT CONTENT TO FULL OPACITY */
 .block h2,
