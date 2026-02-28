@@ -1,0 +1,121 @@
+@import url("style.css");
+
+/* Only add hero section here if not already present */
+
+.page-hero{
+  position:relative;
+  height:350px;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+}
+
+.page-hero::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:60%;
+  height:100%;
+  background:#16a34a;
+  clip-path:polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  opacity:0.9;
+  z-index:1;
+}
+
+.page-hero h1{
+  position:relative;
+  z-index:2;
+  color:#fff;
+  font-size:clamp(50px,6vw,80px);
+  margin-left:8%;
+}
+
+@media (max-width: 1024px) {
+  .service,
+  .service.reverse,
+  .about-grid,
+  .vision-grid,
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image img,
+  .about-image img,
+  .vision-right img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .text {
+    align-items: center;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-grid-3x3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-4,
+  .project-grid-3x3 {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .text h2 {
+    font-size: clamp(28px, 5vw, 36px);
+  }
+
+  .company-name {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .contact {
+    gap: 30px;
+  }
+
+  .menu a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .contact-heading {
+    font-size: clamp(28px, 5vw, 40px);
+  }
+
+  .menu{
+    position:absolute;
+    top:70px;
+    right:0;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    align-items:flex-start;
+    padding:20px;
+    gap:20px;
+    display:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  .menu.active{
+    display:flex;
+  }
+
+  .hamburger{
+    display:block;
+  }
+
+}

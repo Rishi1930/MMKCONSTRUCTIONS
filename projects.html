@@ -1,169 +1,140 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <title>Projects - MMK Constructions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css?v=3">
-    </head>
-    <body>
-<header class="navbar">
-  <div class="logo">MMK Constructions</div>
-  <nav>
-    <a href="index.html">Home</a>
-  </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects - MMK Constructions</title>
+<link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav">
+
+    <div class="logo-box">
+      <img src="Assets/logo.png" class="logo">
+      <span class="company-name">MMK Constructions</span>
+    </div>
+
+    <!-- Hamburger Button -->
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+
+    <ul class="menu" id="menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT US</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+
+  </div>
 </header>
 
-    <section class="projects-page">
-<div class="projects-header">
+<!-- HERO -->
+<section class="page-hero" style="background-image:url('Assets/services-bg.jpg')">
+  <h1>Our Projects</h1>
+</section>
 
-<button onclick="goToAbout()" class="btn secondary back-btn">
-  ← Back
-</button>
+<!-- PROJECTS WITH SAME GRADIENT SYSTEM -->
 
-  <p class="label">PORTFOLIO</p>
-
-  <h1 class="projects-title">
-    Our <span>Projects</span>
-  </h1>
-
-</div>
-
-    <!-- APARTMENT -->
-    <div class="project-row">
-        <div class="project-text">
-        <h2>Residential Apartment</h2>
-        <p>
-            Multi-floor residential apartment designed with structural
-            precision and modern urban planning standards.
-        </p>
-        <p><strong>Project Type:</strong> Residential Building</p>
-        </div>
-        <div class="project-image">
-        <img src="Assets/apartment.jpg" alt="">
-        </div>
+<section class="section buildings">
+  <div class="container service">
+    <div class="image">
+      <img src="Assets/farmhouse.jpg">
     </div>
-
-
-    <!-- FARMHOUSE / LUXURY VILLA -->
-    <div class="project-row reverse">
-        <div class="project-text">
-        <h2>Luxury Farmhouse</h2>
-        <p>
-            Premium farmhouse built with high-end finishes, landscape
-            integration and elegant architectural design.
-        </p>
-        <p><strong>Project Type:</strong> Luxury Residential</p>
-        </div>
-        <div class="project-image">
-        <img src="Assets/farmhouse.jpg" alt="">
-        </div>
+    <div class="text">
+      <h2>Gabion Wall</h2>
+      <p>High quality retaining wall construction for erosion control and flood safety.</p>
     </div>
+  </div>
+</section>
 
-
-    <!-- INDEPENDENT HOUSE -->
-    <div class="project-row">
-        <div class="project-text">
-        <h2>Independent Residence</h2>
-        <p>
-            Independent home constructed with modern structural standards,
-            budget planning and elegant simplicity.
-        </p>
-        <p><strong>Project Type:</strong> Independent House</p>
-        </div>
-        <div class="project-image">
-        <img src="Assets/independent-3.jpg" alt="">
-        </div>
+<section class="section irrigation">
+  <div class="container service reverse">
+    <div class="image">
+      <img src="Assets/independent-3.jpg">
     </div>
-
-
-    <!-- INTERIORS -->
-    <div class="project-row reverse">
-        <div class="project-text">
-        <h2>Luxury Interior Works</h2>
-        <p>
-            Premium interior design and execution including modular layouts,
-            custom finishes and high-quality material selection.
-        </p>
-        <p><strong>Project Type:</strong> Interior Design & Execution</p>
-        </div>
-        <div class="project-image">
-        <img src="Assets/luxury.jpg" alt="">
-        </div>
+    <div class="text">
+      <h2>Rangareddy Lift Irrigation</h2>
+      <p>Large-scale irrigation project improving agricultural productivity.</p>
     </div>
+  </div>
+</section>
 
-
-    <!-- SCHOOL BUILDING -->
-    <div class="project-row">
-        <div class="project-text">
-        <h2>Residential School Complex</h2>
-        <p>
-            Institutional building constructed for educational purposes
-            with durable structure and large-scale capacity planning.
-        </p>
-        <p><strong>Project Type:</strong> Institutional Building</p>
-        </div>
-        <div class="project-image">
-        <img src="Assets/school.jpg" alt="">
-        </div>
+<section class="section mining">
+  <div class="container service">
+    <div class="image">
+      <img src="Assets/luxury.jpg">
     </div>
-
-
-    <!-- PERMISSIONS & DOCUMENTATION -->
-    <div class="project-row reverse">
-        <div class="project-text">
-        <h2>Building Permissions & Documentation</h2>
-        <p>
-            Complete handling of building approvals, legal documentation,
-            permits and compliance processing for residential and commercial projects.
-        </p>
-        <p><strong>Service:</strong> Legal & Project Documentation</p>
-        </div>
-        <div class="project-image">
-        <img src="Assets/permit.jpg" alt="">
-        </div>
+    <div class="text">
+      <h2>Dindi Lift Irrigation</h2>
+      <p>Advanced pump house and canal engineering works.</p>
     </div>
+  </div>
+</section>
 
-    </section>
-<script>
-function goToAbout() {
-  window.location.href = "index.html#infoPage";
-}
-</script>
-
-<section class="trust-section">
-
-  <p class="label">WHY CHOOSE US</p>
-
-  <h2 class="trust-title">
-    Built on <span>Trust & Results</span>
-  </h2>
-
-  <div class="trust-grid">
-
-    <div class="trust-card">
-      <h3>10+ Years Experience</h3>
-      <p>Proven track record delivering residential and commercial projects.</p>
+<section class="section roads">
+  <div class="container service reverse">
+    <div class="image">
+      <img src="Assets/permit.jpg">
     </div>
-
-    <div class="trust-card">
-      <h3>Quality Assurance</h3>
-      <p>Strict quality checks with durable materials and expert execution.</p>
+    <div class="text">
+      <h2>Residential School Complex</h2>
+      <p>Complete infrastructure development including academic and residential facilities.</p>
     </div>
+  </div>
+</section>
 
-    <div class="trust-card">
-      <h3>On-Time Delivery</h3>
-      <p>Projects completed within deadlines without compromising standards.</p>
+<section class="section drainage">
+  <div class="container service">
+    <div class="image">
+      <img src="Assets/school.jpg">
     </div>
+    <div class="text">
+      <h2>Division Office Building</h2>
+      <p>Modern administrative building constructed with structural excellence.</p>
+    </div>
+  </div>
+</section>
 
-    <div class="trust-card">
-      <h3>End-to-End Service</h3>
-      <p>From planning to permissions to execution — everything handled.</p>
+<section class="section solar">
+  <div class="container service reverse">
+    <div class="image">
+      <img src="Assets/apartment.jpg">
+    </div>
+    <div class="text">
+      <h2>New Polytechnic Building</h2>
+      <p>Educational infrastructure project designed for long-term durability.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION SAME AS HOME -->
+
+<section class="section light" id="contact">
+  <h2 class="contact-heading">CONTACT US</h2>
+  <div class="container contact">
+
+    <form class="contact-form">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email Address">
+      <input type="text" placeholder="Phone Number">
+      <textarea placeholder="How we can help you?"></textarea>
+      <button type="submit">SEND MESSAGE</button>
+    </form>
+
+    <div class="map">
+      <iframe src="https://maps.google.com/maps?q=Swarnagiri%20Temple%20Bhuvanagiri%20Telangana&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
     </div>
 
   </div>
-
 </section>
 
-    </body>
-    </html>
+<footer>
+© Copyright 2026 MMK Constructions. All Rights Reserved
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

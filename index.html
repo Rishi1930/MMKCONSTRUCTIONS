@@ -1,211 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MMK Constructions</title>
-  <link rel="stylesheet" href="style.css?v=3" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MMK Constructions Pvt Ltd</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">MMK Constructions</div>
-  <nav>
-    <a href="#" id="navHome">Home</a>
-    <a href="#" id="navAbout">About</a>
-  </nav>
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+  <div class="container nav">
+
+    <div class="logo-box">
+      <img src="Assets/logo.png" class="logo">
+      <span class="company-name">MMK Constructions</span>
+    </div>
+
+    <!-- Hamburger Button -->
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+
+    <ul class="menu" id="menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT US</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+
+  </div>
 </header>
 
-<!-- HOME -->
-<section id="homePage" class="hero">
+<!-- ================= HERO ================= -->
 
-  <!-- Background Video -->
-  <video class="bg-video" autoplay muted loop playsinline>
+<section class="hero" id="home">
+  <video autoplay muted loop playsinline class="bg-video">
     <source src="Assets/bg12.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
   </video>
 
-  <!-- Overlay -->
-  <div class="overlay"></div>
+  <div class="video-dark"></div>
 
-  <!-- Content -->
   <div class="hero-content">
-<h1 class="title">
-  Welcome to<br>
-  <span>MMK Constructions</span>
-</h1>
-
-    <p class="subtitle">
-      Professional Construction Solutions Built on Trust
-    </p>
-
-    <div class="hero-cta">
-      <button id="exploreBtn" class="btn primary">Explore About Us</button>
-      <button class="btn secondary" id="contactBtn">Contact Us</button>
-<a href="tel:+919490539941" class="call-link">
-  <span class="phone-icon">☎</span> +91 94905 39941
-</a>
-    </div>
+    <h1>MMK CONSTRUCTIONS</h1>
+    <p>Professional Construction Solutions Built on Trust</p>
   </div>
-
 </section>
 
+<!-- ================= VISION / MISSION ================= -->
 
-<!-- INFO PAGE -->
-
-<section id="infoPage" class="page hidden">
-
-  <div class="page-content">
-
-    <!-- HERO STYLE INTRO -->
-    <div class="block">
-      <img src="Assets/logo.png" class="info-logo" alt="MMK Logo">
-      <p class="label">HYDERABAD'S TRUSTED BUILDERS</p>
-      <h2>
-        Building Dreams.<br>
-        <span style="color:#ffffff;">Delivering Legacy.</span>
-      </h2>
-      <p>
-        Over a decade of construction excellence. Delivering premium
-        residential and commercial projects with uncompromising quality.
-      </p>
+<section class="section white">
+  <div class="container grid-4">
+    <div class="icon-card">
+      <i class="fas fa-eye icon"></i>
+      <h3>OUR VISION</h3>
+      <p>We aim to provide a superior quality of works that can encourage the life of the common man by continuous improvement of core infrastructure.</p>
     </div>
-
-    <!-- SERVICES -->
-    <div class="block">
-      <p class="label">WHAT WE DO</p>
-      <h2>Our <span style="color:#ffffff;">Services</span></h2>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Residential Construction</h3>
-          <p>Custom-designed homes crafted with structural precision and premium materials.</p>
-        </div>
-
-        <div class="card">
-          <h3>Commercial Projects</h3>
-          <p>Large-scale commercial developments built for durability and long-term value.</p>
-        </div>
-
-        <div class="card">
-          <h3>Renovation & Remodeling</h3>
-          <p>Transforming outdated spaces into modern architectural statements.</p>
-        </div>
-
-        <div class="card">
-          <h3>Project Documentation</h3>
-          <p>End-to-end project handling with complete compliance and approvals.</p>
-        </div>
-      </div>
+    <div class="icon-card">
+      <i class="fas fa-bullseye icon"></i>
+      <h3>OUR MISSION</h3>
+      <p>We aim to develop and meet high standards in engineering excellence and efficiency with a standard quality adopting the highest economy.</p>
     </div>
-
-    <!-- PROJECTS -->
-    <div class="block">
-      <p class="label">PORTFOLIO</p>
-      <h2>Featured <span style="color:#ffffff;">Projects</span></h2>
-
-      <div class="projects-grid">
-
-<div class="project-card">
-  <img src="Assets/farmhouse.jpg" alt="">
-  <div class="project-info">
-    <h3>Luxury Farmhouse</h3>
-    <p>Custom-designed farmhouse with high-end finishes, spacious planning, and strong structural execution.</p>
+    <div class="icon-card">
+      <i class="fas fa-handshake icon"></i>
+      <h3>OUR VALUES</h3>
+      <p>We sincerely respect emerging ideas with believable Teamwork. We are in passion about learning integrity and innovation.</p>
+    </div>
+    <div class="icon-card">
+      <i class="fas fa-chess icon"></i>
+      <h3>OUR STRATEGY</h3>
+      <p>Business Development Growth with identification by the formation of strategic joint venture relationship with mutual benefits by sharing the business skills.</p>
+    </div>
   </div>
-</div>
-
-<div class="project-card">
-  <img src="Assets/apartment.jpg" alt="">
-  <div class="project-info">
-    <h3>Residential Apartments</h3>
-    <p>Well-planned multi-floor apartments built for durability, comfort, and efficient space utilization.</p>
-  </div>
-</div>
-
-<div class="project-card">
-  <img src="Assets/independent-3.jpg" alt="">
-  <div class="project-info">
-    <h3>Independent Residence</h3>
-    <p>Individually crafted homes designed for functionality, aesthetics, and long-term reliability.</p>
-  </div>
-</div>
-
-      </div>
-      <div class="projects-cta">
-  <a href="projects.html" class="btn secondary">View More Projects</a>
-</div>
-    </div>
-
-    <!-- CONTACT -->
-    <div class="block">
-      <p class="label">GET IN TOUCH</p>
-      <h2>Start Your <span style="color:#ffffff;">Project</span></h2>
-      <p>
-        Let's discuss your requirements and turn your vision into reality.
-      </p>
-
-      <button class="btn secondary" id="contactBtn">
-        Contact Us
-      </button>
-    </div>
-
-<div class="contact-inline">
-  <p>
-    📧 <a href="mailto:mantrimallesh99@gmail.com">
-      mantrimallesh99@gmail.com
-    </a>
-  </p>
-  <p>
-    📞 <a href="tel:+919490539941">
-      +91 94905 39941
-    </a>
-  </p>
-  <p>
-    📍 Near Swarnagiri Temple, Hyderabad, India
-  </p>
-</div>
-    <!-- MAP -->
-<div class="map-container">
-  <iframe
-    src="https://www.google.com/maps?q=Hyderabad%20Telangana%20India&output=embed"
-    allowfullscreen=""
-    loading="lazy">
-  </iframe>
-</div>
-    </div>
-
-    <button id="backBtn" class="btn secondary back">
-      ← Back to Home
-    </button>
-
-  </div>
-
 </section>
 
-  <!-- FOOTER -->
-<footer class="footer">
-  © 2026 All Rights Reserved - MMK Constructions
+<!-- ================= ABOUT ================= -->
+
+<section class="section light" id="about">
+  <div class="container service">
+    <div class="image">
+      <img src="Assets/apartment.jpg">
+    </div>
+    <div class="text">
+      <h2>About Us</h2>
+      <p>Company introduction and background details...</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="section projects" id="projects">
+  <div class="container">
+    <h2 class="center">OUR SUCCESSFUL PROJECTS</h2>
+    <div class="project-grid project-grid-3x3">
+      <div class="project-item">
+        <h4 class="project-name">GABION WALL</h4>
+        <img src="Assets/farmhouse.jpg" alt="Gabion Wall">
+      </div>
+      <div class="project-item">
+        <h4 class="project-name">RANGAREDDY LIFT IRRIGATION</h4>
+        <img src="Assets/independent-3.jpg" alt="Rangareddy Lift Irrigation">
+      </div>
+      <div class="project-item">
+        <h4 class="project-name">DINDI LIFT IRRIGATION</h4>
+        <img src="Assets/luxury.jpg" alt="Dindi Lift Irrigation">
+      </div>
+      <div class="project-item">
+        <h4 class="project-name">RESIDENTIAL SCHOOL</h4>
+        <img src="Assets/permit.jpg" alt="Residential School Complex">
+      </div>
+      <div class="project-item">
+        <h4 class="project-name">DIVISION OFFICE BUILDING</h4>
+        <img src="Assets/school.jpg" alt="Division Office Building">
+      </div>
+      <div class="project-item">
+        <h4 class="project-name">NEW POLYTECHNIC BUILDING</h4>
+        <img src="Assets/apartment.jpg" alt="New Polytechnic Building">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES HEADER ================= -->
+
+<section class="section white">
+  <div class="container">
+    <h2 class="services-header">OUR SERVICES</h2>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section buildings">
+  <div class="container service">
+    <div class="image">
+      <img src="Assets/apartment.jpg">
+    </div>
+    <div class="text">
+      <h2>BUILDINGS</h2>
+      <p>Description of building services...</p>
+      <a class="btn">Know More →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section irrigation">
+  <div class="container service reverse">
+    <div class="image">
+      <img src="Assets/school.jpg">
+    </div>
+    <div class="text">
+      <h2>IRRIGATION</h2>
+      <p>Description of irrigation services...</p>
+      <a class="btn">Know More →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section mining">
+  <div class="container service">
+    <div class="image">
+      <img src="Assets/permit.jpg">
+    </div>
+    <div class="text">
+      <h2>MINING WORK</h2>
+      <p>Description of mining operations...</p>
+      <a class="btn">Know More →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section roads">
+  <div class="container service reverse">
+    <div class="image">
+      <img src="Assets/luxury.jpg">
+    </div>
+    <div class="text">
+      <h2>ROADS</h2>
+      <p>Description of road infrastructure...</p>
+      <a class="btn">Know More →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section drainage">
+  <div class="container service">
+    <div class="image">
+      <img src="Assets/apartment.jpg">
+    </div>
+    <div class="text">
+      <h2>DRAINAGE PIPELINE</h2>
+      <p>Description of drainage pipeline work...</p>
+      <a class="btn">Know More →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section solar">
+  <div class="container service reverse">
+    <div class="image">
+      <img src="Assets/school.jpg">
+    </div>
+    <div class="text">
+      <h2>SOLAR PLANT</h2>
+      <p>Description of solar plant services...</p>
+      <a class="btn">Know More →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section light" id="contact">
+  <h2 class="contact-heading">CONTACT US</h2>
+  <div class="container contact">
+    <form class="contact-form">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email Address">
+      <input type="text" placeholder="Phone Number">
+      <textarea placeholder="How we can help you?"></textarea>
+      <button type="submit">SEND MESSAGE</button>
+    </form>
+    <div class="map">
+      <iframe src="https://maps.google.com/maps?q=Swarnagiri%20Temple%20Bhuvanagiri%20Telangana&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © Copyright 2026 MMK Constructions. All Rights Reserved
 </footer>
-</section>
-
-<!-- CONTACT POPUP -->
-<div class="contact-modal hidden" id="contactModal">
-  <div class="contact-box">
-    <button class="close-btn" id="closeModal">&times;</button>
-
-    <h2>Contact Us</h2>
-
-    <input type="text" id="userName" placeholder="Your Name">
-    <input type="tel" id="userPhone" placeholder="Phone Number">
-    <input type="tel" id="userArea" placeholder="Your Area/City">
-    <textarea id="userMsg" placeholder="How can we help you?"></textarea>
-
-    <button class="btn primary" id="sendWhatsApp">
-      Send via WhatsApp
-    </button>
-  </div>
-</div>
 <script src="script.js"></script>
 </body>
 </html>
