@@ -32,3 +32,99 @@
   font-size:clamp(50px,6vw,80px);
   margin-left:8%;
 }
+
+/* ================= CATEGORY HEADINGS ================= */
+
+.category-heading{
+  text-align:center;
+  font-size:clamp(28px,4vw,40px);
+  font-weight:700;
+  letter-spacing:3px;
+  margin-bottom:10px;
+  color:#111;
+  position:relative;
+}
+
+.category-heading::after{
+  content:"";
+  display:block;
+  width:70px;
+  height:4px;
+  background:#16a34a;
+  margin:12px auto 0;
+  border-radius:2px;
+}
+
+
+/* ================= PROJECT PAGE SERVICE SPACING ================= */
+
+.section.buildings,
+.section.irrigation,
+.section.drainage,
+.section.solar{
+  padding:60px 0;
+}
+
+
+/* ================= TEXT IMPROVEMENT ================= */
+
+.service .text p{
+  font-size:15px;
+  line-height:1.7;
+}
+
+
+/* ================= IMAGE CONSISTENCY ================= */
+
+.service-image img{
+  border-radius:18px;
+}
+
+
+/* ================= RESPONSIVE FIXES ================= */
+
+@media (max-width:1024px){
+
+  .service,
+  .service.reverse{
+    flex-direction:column;
+    gap:30px;
+    text-align:center;
+  }
+
+  .text{
+    align-items:center;
+  }
+
+  .text p{
+    max-width:100%;
+  }
+
+}
+
+
+@media (max-width:768px){
+
+  .page-hero{
+    height:250px;
+  }
+
+  .page-hero h1{
+    font-size:clamp(28px,7vw,42px);
+    margin-left:6%;
+  }
+
+  .service{
+    gap:20px;
+  }
+
+  .service-image img{
+    height:auto;
+    max-width:100%;
+  }
+
+  .section{
+    padding:30px 0;
+  }
+
+}
