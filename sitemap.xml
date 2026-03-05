@@ -3,19 +3,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://rishi1930.github.io/MMKCONSTRUCTIONS/</loc>
+<loc>https://mmkconstructions.co.in/</loc>
 <lastmod>2026-03-05</lastmod>
 <priority>1.00</priority>
 </url>
 
 <url>
-<loc>https://rishi1930.github.io/MMKCONSTRUCTIONS/projects.html</loc>
+<loc>https://mmkconstructions.co.in/About/</loc>
 <lastmod>2026-03-05</lastmod>
 <priority>0.80</priority>
 </url>
 
 <url>
-<loc>https://rishi1930.github.io/MMKCONSTRUCTIONS/contact.html</loc>
+<loc>https://mmkconstructions.co.in/Projects/</loc>
+<lastmod>2026-03-05</lastmod>
+<priority>0.80</priority>
+</url>
+
+<url>
+<loc>https://mmkconstructions.co.in/Contact/</loc>
 <lastmod>2026-03-05</lastmod>
 <priority>0.80</priority>
 </url>
