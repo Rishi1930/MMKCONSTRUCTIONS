@@ -114,7 +114,7 @@ body{
 /* CONTACT HEADING */
 
 #contact{
-  padding-top:20px;
+  padding-top:10px;
 }
 
 .contact-heading{
@@ -238,6 +238,9 @@ footer{
   .grid-4,
   .project-grid-3x3 {
     grid-template-columns: 1fr;
+  }
+    .page-hero{
+    height:250px;
   }
 
   .section {

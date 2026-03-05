@@ -303,6 +303,10 @@ footer{
     text-align: center;
   }
 
+   .page-hero{
+    height:250px;
+  }
+
   .image img,
   .about-image img,
   .vision-right img {
@@ -328,7 +332,7 @@ footer{
   }
 
   .section {
-    padding: 25px 0;
+    padding: 20px 0;
   }
 
   .text h2 {
