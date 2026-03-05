@@ -234,14 +234,16 @@ body{
 .projects{
   position:relative;
   overflow:hidden;
-  background: linear-gradient(
+  background:linear-gradient(
     135deg,
-    #f4a261 0%,     /* softer saffron */
-    #ffffff 45%,
-    #2e8b57 100%     /* green */
+    #f8f3e8 0%,
+    #efe6d6 40%,
+    #e4d2b8 70%,
+    #d6c0a1 100%
   );
-  color:#111;
+  color:#2c2c2c;
 }
+
 
 .projects .container{
   position:relative;
@@ -555,7 +557,7 @@ footer{
   .menu{
     position:absolute;
     top:100%;
-     right:15px;      /* move to right side */
+    right:15px;      /* move to right side */
     left:auto;       /* remove left */
     width:220px;     /* small box */
     background:rgba(255,255,255,0.95);  /* slight transparency */
@@ -589,5 +591,4 @@ footer{
     height:auto;         /* remove fixed height */
     max-width:100%;
   }
-
 }
